@@ -1,25 +1,64 @@
 table, td{
-  border: 1px solid  rgb(51, 51, 51);
+  border: 1px solid  rgb(55, 45, 246);
   margin: 20px;
 }
 
 th{
   color: white;
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(19, 15, 246);
 }
 
 td{
   padding: 5px;
 }
 
-.mail-container{
+.navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.navbar-buttons {
+  margin-left: auto;
+}
+
+.navbar-buttons form {
+  display: inline;
+  margin-right: 5px;
+}
+
+.navbar-buttons input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-buttons input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+.mail-container {
   position: absolute;
-  border: 3px solid #888888;
-  margin-left: 550px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 3px solid #3c46da;
   border-radius: 10px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
+  width: 300px;
+  background-color: #f2f2f2;
 }
 
 .text-container{
@@ -28,14 +67,61 @@ td{
 
 a{
   text-decoration: none;
-  color:rgb(74, 149, 247);
+  color:rgb(0, 6, 180);
 }
 
 a:hover{
-  color:rgb(6, 72, 160);
+  color:rgb(1, 34, 78);
+}
+th{
+  text-align: center; 
+  color: rgb(69, 77, 229) 
 }
 
-h1{
+.center {
   text-align: center;
-  color:rgb(75, 74, 74);
+}
+
+.mailbox {
+  margin-top: 20px;
+}
+
+.mailbox table {
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.mailbox th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+.mailbox td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.mailbox .email-object {
+  font-weight: bold;
+}
+
+.mailbox .label {
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+.mailbox .label-default {
+  background-color: #999;
+  color: #fff;
+}
+
+.mailbox .label-success {
+  background-color: #5cb85c;
+  color: #fff;
+}
+
+.mailbox .btn {
+  margin-right: 5px;
 }

@@ -1,10 +1,12 @@
-  <center>
-    <br>
-    <%=button_to "Recevoir un email", emails_path, data:{turbo_frame: "email"}%>
-    <br>
-    <%=button_to "Vider la boite mail", email_path("destroy_all"), data:{turbo_frame: "email"}, :method => :delete %>
-    <br>
-  </center>
+<nav class="navbar">
+  <div class="navbar-brand">
+    <span class="logo">Gmail-lite</span>
+  </div>
+  <div class="navbar-buttons">
+    <%= button_to "Recevoir un email", emails_path, data: { turbo_frame: "email" } %>
+    <%= button_to "Vider la boite mail", email_path("destroy_all"), data: { turbo_frame: "email" }, method: :delete %>
+  </div>
+</nav>
 
   <%= turbo_frame_tag "email" do %>
   
